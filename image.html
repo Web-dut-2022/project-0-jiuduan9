@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Image Search</title>
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
@@ -9,21 +9,24 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="content">
-        <div class="search-link">
-            <a href="image.html">Image Search</a>
+    <div class="grid content">
+        <div class="grid-item search-link">
+            <a href="index.html">Google Search</a>
             <a href="advance.html">Advance Search</a>
         </div>
-        <div class=" image" id='logo'>
+        <div class="grid-item image" >
             <img src="google-logo.png">
+            <a id="logo-link" href="https://google.com/image">Image</a>
         </div>
-        <div class="search-form">
-            <form action="https://google.com/search">
-                <input class="search-input" type="text" name="q"  AUTOCOMPLETE="off" placeholder="Search Google or type a URL" ><br>
-                <i class="fa fa-search   search-icon"></i>
+        <div class="grid-item search-form">
+            <form action="https://google.com/images">
+                
+                <input class="search-input" type="text" name="q"  AUTOCOMPLETE="off"><br>
+                <i class="fa fa-search  search-icon"></i>
                 <i class="fa fa-microphone microphone-icon"></i>
-                <button class="search-btn btn btn-primary " type="submit" href="https://google.com/search"value="Google Search">Google search</button>
-                <button type="submit" class="btn btn-primary search-btn" href='https://google.com/doodles' >I am feeling lucky!</button>                
+                <i class="fa fa-camera  camera-icon"></i>
+                <button class="search-btn btn btn-primary  btn-lg" type="submit" >Google image</button>
+                
             </form>
         </div>
     </div>
